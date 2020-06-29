@@ -44,7 +44,7 @@ public class DeleteServlet extends HttpServlet {
 		}
 
 		ServletContext context = getServletContext();
-		RequestDispatcher dis = context.getRequestDispatcher("/confirmation.jsp");
+		RequestDispatcher dis = context.getRequestDispatcher("/delete.jsp");
 		dis.forward(request, response);
 	}
 

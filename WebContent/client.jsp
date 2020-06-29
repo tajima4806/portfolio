@@ -10,16 +10,15 @@
 		<title>Insert title here</title>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 	<!-- Bootstrap core CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="client.css">
 </head>
 
 <body>
-	<div class="container-fluid">
 		<nav class="navbar navbar-light mb-2" style="background-color:#6d844d;">
 	  		<a class="navbar-brand" href="http://localhost:8080/webExam2/ClientServlet">
 	    	<img src="reg.png" width="auto" height="32"></a>
@@ -42,9 +41,11 @@
 	  		<i class="fas fa-user-circle"></i> ゲスト 様</button>
 		</nav>
 
+		<div class="container-fluid">
+
 		<h4>${message}</h4>
 
-		<table class="table table-striped table-responsive-md">
+		<table class="table table-striped table-responsive-md text-nowrap">
 			<tr>
 				<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th>在庫</th><th></th>
 			</tr>

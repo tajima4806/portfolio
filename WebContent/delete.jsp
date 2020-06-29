@@ -9,12 +9,12 @@
 		<title>confirm</title>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 	<!-- Bootstrap core CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="delete.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 
 		<h2>以下の商品を削除します</h2>
 
-		<table class="table table-bordered">
+		<table class="table table-bordered table-responsive-md text-nowrap">
 			<thead class="thead-dark">
 				<tr>
 					<th>商品ID</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th>在庫</th>

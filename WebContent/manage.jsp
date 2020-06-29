@@ -10,8 +10,6 @@
 		<title>Buddit Management</title>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 	<!-- Bootstrap core CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Material Design Bootstrap -->
@@ -168,7 +166,7 @@
 				<h4>${message}</h4>
 
 				<c:if test="${list != null}">
-					<table class="table table-striped table-responsive-md text-nowrap">
+					<table class="table table-striped table-responsive-xl text-nowrap">
 						<tr>
 							<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th>在庫</th><th></th><th></th><th></th>
 						</tr>

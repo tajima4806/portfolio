@@ -4,34 +4,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>buy</title>
-<!-- Font Awesome -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>buy</title>
+	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 	<!-- Bootstrap core CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="buy.css">
 </head>
+
 <body>
-<div class="container">
-	<h2>以下の商品を購入します</h2>
+	<div class="container">
 
-		<table class="table table-bordered">
-		<thead class="thead-dark">
-			<tr>
-				<th>商品id</th><th>商品コード</th><th>商品名</th><th>価格</th>
-			</tr>
-		</thead>
+		<h2>以下の商品を購入します</h2>
 
-		<tbody>
-			<tr>
-				<td>${item.id}</td><td>${item.code}</td><td>${item.name}</td><td>${item.price}</td>
-			</tr>
-		</tbody>
+		<table class="table table-bordered table-responsive-md text-nowrap">
+			<thead class="thead-dark">
+				<tr>
+					<th>商品ID</th><th>商品コード</th><th>商品名</th><th>価格</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>${item.id}</td><td>${item.code}</td><td>${item.name}</td><td>${item.price}</td>
+				</tr>
+			</tbody>
 		</table>
 
 		<form action="BuyServlet" method="post">
@@ -54,8 +56,9 @@
 				    </div>
 				  </div>
 				</div>
-		<input type="hidden" name="code" value="${item.code}">
-	</form>
+			<input type="hidden" name="code" value="${item.code}">
+		</form>
+
 			<button class="btn blue-gradient btn-block" data-toggle="modal" data-target="#modBuy">
 				購入</button>
 	</div>

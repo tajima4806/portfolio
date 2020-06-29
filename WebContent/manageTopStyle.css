@@ -3,8 +3,6 @@
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 
-
-
 /* Simple Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -14,7 +12,6 @@ body {
   color: #5e5e5e;
   font: 400 87.5%/1.5em 'Open Sans', sans-serif;
 }
-
 
 .message{
 	color: red;
