@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+.container-fluid{
+	width: 95%;
+
+}
+
+h4 {
+	margin-top: 0.8rem;
+}
+
+.card {
+	border: solid 1px rgba(0,0,0,.125);
+	-webkit-box-shadow: initial;
+	box-shadow: initial;
+}
+
+.card-body {
+	padding: 1rem;
+}
+
+
+
+.list-group-item-action {
+	color: black;
+}
+
+.btn {
+	color: black;
+	font-size:1em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.btn.btn-block {
+	margin-top: 0.5rem ;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.btn-info {
+
+}
+
+table th, table td {
+	font-size: 1.2rem;
+}
+
+.table th, .table td {
+	padding-right: 2rem;
+}
