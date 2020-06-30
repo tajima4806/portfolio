@@ -17,7 +17,9 @@ import dbAccess.SelectAll;
 import dbAccess.SelectOne;
 
 /**
- * Servlet implementation class BuyServlet
+ * 商品購入時に呼び出されるサーブレット<br>
+ * ・doGet...対象の商品情報をDBから取得し、購入ページに遷移<br>
+ * ・doPost...購入処理を呼び出し、結果表示ページに遷移
  */
 @WebServlet("/BuyServlet")
 public class BuyServlet extends HttpServlet {

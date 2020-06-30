@@ -14,7 +14,7 @@
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="stock.css">
+	<link rel="stylesheet" type="text/css" href="confirm.css">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="modTitle">商品を補充します</h5>
+			        <h4 class="modal-title" id="modTitle">商品を補充します</h4>
 			        <button class="close" data-dismiss="modal">
 			          <span>&times;</span>
 			        </button>

@@ -10,7 +10,7 @@ import dto.ItemDto;
 
 /**
  * DBAccessインターフェースを実装する検索クラス<br>
- * DBからパラメータに受取った価格帯の商品情報をArrayListとして取得する<br>
+ * DBからパラメータに受取った条件に合う商品情報をArrayListとして取得する<br>
  */
 public class MultiSearch implements DBAccess {
 

@@ -14,7 +14,6 @@ import dto.ItemDto;
  * DBとの接続、操作、切断を処理するクラス<br>
  * Dao...Data Access Objectの略
  * @author user
- *
  */
 public class ItemDao {
 
@@ -40,7 +39,6 @@ public class ItemDao {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
-
 	}
 
 	/**
@@ -57,8 +55,8 @@ public class ItemDao {
 	/**
 	 * ログイン時のデータ照合
 	 * @param name 名前
-	 * @param pass　パスワード
-	 * @return ログイン成功時...1 <br>ログイン失敗時...0
+	 * @param pass パスワード
+	 * @return ログインエラー...0 <br>管理者ログイン...1 <br>ゲストログイン...2
 	 * @throws SQLException
 	 */
 	public int getLoginInfo(String name, String pass) throws SQLException{
@@ -107,6 +105,11 @@ public class ItemDao {
 		return search(ps).get(0);
 	}
 
+	/**
+	 * DBから5レコードを抽出する(販売数順で並べ替え)
+	 * @return 該当データ
+	 * @throws SQLException
+	 */
 	public ArrayList<ItemDto> getItemsFromSales() throws SQLException{
 
 		sql = "select id, code, name, category, sales from item order by sales desc limit 5";
@@ -114,6 +117,16 @@ public class ItemDao {
 		return search2(ps);
 	}
 
+	/**
+	 * 画面から受け取ったデータを基に検索条件を複合させるメソッド
+	 * @param name
+	 * @param category
+	 * @param p1
+	 * @param p2
+	 * @param flag (true) price>=10000
+	 * @return 該当データ
+	 * @throws SQLException
+	 */
 	public ArrayList<ItemDto> getItemsMulti(String name, String category, int p1, int p2, boolean flag) throws SQLException {
 
 		StringBuilder sb = new StringBuilder("select * from item where 1 = 1");
@@ -255,7 +268,7 @@ public class ItemDao {
 	}
 
 	/**
-	 * DBへの加算処理
+	 * DBへの在庫加算処理
 	 * @param dto 既存商品の更新情報を持つオブジェクト
 	 * @return 成功件数
 	 * @throws SQLException
@@ -278,7 +291,7 @@ public class ItemDao {
 	}
 
 	/**
-	 * DBへの加算処理
+	 * DBへの販売数加算処理
 	 * @param dto 既存商品の更新情報を持つオブジェクト
 	 * @return 成功件数
 	 * @throws SQLException

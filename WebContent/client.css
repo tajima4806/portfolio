@@ -1,20 +1,23 @@
 @charset "UTF-8";
 
 body {
-  font-family: "Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif;
+	font-family: "Helvetica Neue",
+				  Arial,
+			     "Hiragino Kaku Gothic ProN",
+			     "Hiragino Sans",
+			      Meiryo,
+			      sans-serif;
 }
 
 .container-fluid{
 	width: 95%;
 }
 
-h4 {
-	margin-top: 0.8rem;
+h3 {
+	display: inline-block;
+	margin-top: 2rem;
+	margin-bottom: 0;
+	letter-spacing: 1.5px;
 }
 
 .btn {
@@ -24,11 +27,16 @@ h4 {
     letter-spacing: 1.5px;
 }
 
-.btn.btn-block {
-	margin-top: 0.5rem ;
-	margin-right: 0;
-	margin-bottom: 0;
-	margin-left: 0;
+.table {
+	margin-top: 2rem;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+	background-color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: #ffffff;
 }
 
 table th, table td {
@@ -37,4 +45,45 @@ table th, table td {
 
 .table th, .table td {
 	padding-right: 2rem;
+}
+
+th {
+	background-color: #343a40;
+	color: white;
+	letter-spacing: 3px;
+}
+
+.continue {
+	display: inline-block;
+	perspective: 1000px;
+	perspective-origin: 50% 50%;
+	vertical-align: bottom;
+	overflow: hidden;
+	color: #00ACC1;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+}
+.continue span {
+	display: inline-block;
+	position: relative;
+	padding: 0 0.3em;
+	transition: .4s;
+	transform-origin: 50% 0%;
+	transform-style: preserve-3d;
+}
+.continue span:after {
+	display: inline-block;
+	position: absolute;
+	padding: 0.1em 0.3em;
+	left: 0;
+	top: 0;
+	content: attr(data-text);
+	color: #fff;
+	background-color: #00ACC1;
+	transform-origin: 50% 0%;
+	transform: translate3d(0, 105%, 0) rotateX(-90deg);
+}
+.continue:hover span {
+	background-color: #00ACC1;
+	transform: translate3d(0, 0, -30px) rotateX(90deg);
 }

@@ -16,18 +16,19 @@ public class InsertItem implements DBAccess {
 
 	@Override
 	public void execute(HttpServletRequest request) throws SQLException {
-		
+
 		ItemDao dao = null;
 		int n = 0;
-		
+
 		String name = request.getParameter("name");
 		String category= request.getParameter("category");
 		String price = request.getParameter("price");
 		String stock = request.getParameter("stock");
-		
-		
-		if(name != null && !name.isEmpty() && price != null && !price.isEmpty() && Judge.isNumber(price) && stock != null && !stock.isEmpty() && Judge.isNumber(stock)) {
-			
+
+
+		if(name != null && !name.isEmpty() && price != null && !price.isEmpty() && Judge.isNumber(price)
+										   && stock != null && !stock.isEmpty() && Judge.isNumber(stock)) {
+
 			ItemDto dto = new ItemDto();
 			dto.setName(name);
 			dto.setCategory(category);

@@ -18,7 +18,7 @@ import dbAccess.SelectForLogin;
 /**
  * ログイン時に呼び出されるサーブレット<br>
  * ・doGet...ログインページに遷移<br>
- * ・doPost...データ照合処理を呼び出し、成功時は管理ページにリダイレクト、失敗時はログインページに戻る
+ * ・doPost...データ照合処理を呼び出し、成功時は該当ページにリダイレクト、失敗時はログインページに戻る
  */
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {

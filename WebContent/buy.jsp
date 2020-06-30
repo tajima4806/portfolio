@@ -14,7 +14,7 @@
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="buy.css">
+	<link rel="stylesheet" type="text/css" href="confirm.css">
 </head>
 
 <body>
@@ -22,26 +22,28 @@
 
 		<h2>以下の商品を購入します</h2>
 
-		<table class="table table-bordered table-responsive-md text-nowrap">
-			<thead class="thead-dark">
-				<tr>
-					<th>商品ID</th><th>商品コード</th><th>商品名</th><th>価格</th>
-				</tr>
-			</thead>
+		<div class="md-form">
+			<table class="table table-bordered table-responsive-md text-nowrap">
+				<thead class="thead-dark">
+					<tr>
+						<th>商品ID</th><th>商品コード</th><th>商品名</th><th>価格</th>
+					</tr>
+				</thead>
 
-			<tbody>
-				<tr>
-					<td>${item.id}</td><td>${item.code}</td><td>${item.name}</td><td>${item.price}</td>
-				</tr>
-			</tbody>
-		</table>
+				<tbody>
+					<tr>
+						<td>${item.id}</td><td>${item.code}</td><td>${item.name}</td><td>${item.price}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
 		<form action="BuyServlet" method="post">
 			<div class="modal fade" id="modBuy" data-backdrop="static" data-keyboard="false" tabindex="-1">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
-				        <h5 class="modal-title" id="modTitle">商品を購入します</h5>
+				        <h4 class="modal-title" id="modTitle">商品を購入します</h4>
 				        <button class="close" data-dismiss="modal">
 				          <span>&times;</span>
 				        </button>

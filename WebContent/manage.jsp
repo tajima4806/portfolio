@@ -7,7 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Buddit Management</title>
+		<title>EC-HOME</title>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<!-- Bootstrap core CSS -->
@@ -18,8 +18,8 @@
 	<link rel="stylesheet" type="text/css" href="manage.css">
 </head>
 
-<body>
-	<nav class="navbar navbar-light mb-2" style="background-color:#6d844d;">
+<body class="dusty-grass-gradient">
+	<nav class="navbar navbar-light" style="background-color:#6d844d;">
   		<a class="navbar-brand" href="http://localhost:8080/webExam2/ManageServlet">
     	<img src="reg.png" width="auto" height="32"></a>
 
@@ -100,7 +100,7 @@
 							<div class="card-body">
 
 								<form action="ManageServlet" method="get">
-									<div class="form-group">
+									<div class="form-group num1">
 										<label for="Name">Search Name</label>
 
 										<div class="form-row">
@@ -111,7 +111,7 @@
 										</div>
 									</div>
 
-									<div class="form-group">
+									<div class="form-group num2">
 										<label for="Category">Search Category</label>
 
 										<div class="form-row">
@@ -130,7 +130,7 @@
 										</div>
 									</div>
 
-									<div class="form-group">
+									<div class="form-group num3">
 										<label for="Price">Search Price</label>
 
 										<div class="form-row">
@@ -146,7 +146,7 @@
 												</select>
 											</div>
 
-											<div class="col-10 ">
+											<div class="col-10">
 												<button name="btn" value="search"
 													 class="btn btn-info btn-block">検索</button>
 												<input type="hidden" name="selectWay" value="search">
@@ -163,12 +163,12 @@
 
 			<div class="col-lg-9">
 
-				<h4>${message}</h4>
+				<h3>${message}</h3>
 
 				<c:if test="${list != null}">
 					<table class="table table-striped table-responsive-xl text-nowrap">
 						<tr>
-							<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th>在庫</th><th></th><th></th><th></th>
+							<th>商品ID</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>価格</th><th>在庫</th><th></th><th></th><th></th>
 						</tr>
 
 						<c:forEach var="item" items="${list}">
@@ -205,7 +205,7 @@
 
 					<table class="table table-striped table-responsive-md text-nowrap">
 						<tr>
-							<th>商品id</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>売上</th>
+							<th>商品ID</th><th>商品コード</th><th>商品名</th><th>カテゴリ</th><th>売上</th>
 						</tr>
 
 						<c:forEach var="item" items="${list2}">

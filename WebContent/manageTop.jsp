@@ -6,7 +6,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-		<title>Manage Login</title>
+		<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="manageTopStyle.css">
 </head>
 

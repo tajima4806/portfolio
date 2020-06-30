@@ -13,10 +13,16 @@ body {
 	margin-top: 2rem;
 }
 
-.btn {
-	font-size:1.1em;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+.btn.btn-block {
+	font-size: 1.6em;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding: 0.3rem 2rem;
+}
+
+.btn.cloudy-knoxville-gradient, .btn.btn-primary {
+	font-size: 1em;
+	padding: 0.5rem 2rem;
 }
 
 table th, table td {
@@ -25,4 +31,10 @@ table th, table td {
 
 .table th, .table td {
 	padding-right: 2rem;
+}
+
+th {
+	background-color: #343a40;
+	color: white;
+	letter-spacing: 3px;
 }
