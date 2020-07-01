@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="manage.css">
 </head>
 
-<body class="dusty-grass-gradient">
+<body>
 	<nav class="navbar navbar-light" style="background-color:#6d844d;">
   		<a class="navbar-brand" href="http://localhost:8080/webExam2/ManageServlet">
     	<img src="reg.png" width="auto" height="32"></a>
@@ -201,7 +201,7 @@
 
 				<c:if test="${list2 != null}">
 
-					<h4>売上数を表示しています</h4>
+					<h3>売上数を表示しています</h3>
 
 					<table class="table table-striped table-responsive-md text-nowrap">
 						<tr>

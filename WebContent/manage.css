@@ -7,6 +7,7 @@ body {
 			     "Hiragino Sans",
 			      Meiryo,
 			      sans-serif;
+	background-color: #d4fc79;
 }
 
 .container-fluid{
@@ -15,11 +16,11 @@ body {
 
 .col-lg-3 {
 	margin-top: 1rem;
-	padding-right: 2rem;
+	padding-right: 0.5rem;
 }
 
 .col-lg-9 {
-	padding-left: 0;
+	padding-left: 1rem;
 }
 
 h3 {
